@@ -1,0 +1,104 @@
+{
+    "stations": [
+        {
+            "id": "TX01",
+            "nameEn": "Akihabara",
+            "nameJp": "秋葉原"
+        },
+        {
+            "id": "TX02",
+            "nameEn": "Shinokachimachi",
+            "nameJp": "新御徒町"
+        },
+        {
+            "id": "TX03",
+            "nameEn": "Asakusa",
+            "nameJp": "秋葉原"
+        },
+        {
+            "id": "TX04",
+            "nameEn": "Minamisenzyu",
+            "nameJp": "秋葉原"
+        },
+        {
+            "id": "TX05",
+            "nameEn": "Kitasenzyu",
+            "nameJp": "北千住"
+        },
+        {
+            "id": "TX06",
+            "nameEn": "Aoi",
+            "nameJp": "青井"
+        },
+        {
+            "id": "TX07",
+            "nameEn": "Rokucho",
+            "nameJp": "六町"
+        },
+        {
+            "id": "TX08",
+            "nameEn": "Yashio",
+            "nameJp": "八潮"
+        },
+        {
+            "id": "TX09",
+            "nameEn": "Misatochou",
+            "nameJp": "三郷中央"
+        },
+        {
+            "id": "TX10",
+            "nameEn": "Minaminagareyama",
+            "nameJp": "南流山"
+        },
+        {
+            "id": "TX11",
+            "nameEn": "Nagareyamacenteralpark",
+            "nameJp": "流山セントラルパーク"
+        },
+        {
+            "id": "TX12",
+            "nameEn": "Nagareyamaotakanomori",
+            "nameJp": "流山おおたかの森"
+        },
+        {
+            "id": "TX13",
+            "nameEn": "Kashiwanohacampus",
+            "nameJp": "柏の葉キャンパス"
+        },
+        {
+            "id": "TX14",
+            "nameEn": "Kashiwatanaka",
+            "nameJp": "柏たなか"
+        },
+        {
+            "id": "TX15",
+            "nameEn": "Moriya",
+            "nameJp": "守谷"
+        },
+        {
+            "id": "TX16",
+            "nameEn": "Miraidaira",
+            "nameJp": "みらい平"
+        },
+        {
+            "id": "TX17",
+            "nameEn": "Midorino",
+            "nameJp": "みどりの"
+        },
+        {
+            "id": "TX18",
+            "nameEn": "Banpakukinenkouen",
+            "nameJp": "万博記念公園"
+        },
+        {
+            "id": "TX19",
+            "nameEn": "Kenkyugakuen",
+            "nameJp": "研究学園"
+        },
+        {
+            "id": "TX20",
+            "nameEn": "Tsukuba",
+            "nameJp": "つくば"
+        }
+    ]
+}
