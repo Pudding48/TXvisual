@@ -1,4 +1,5 @@
 let requestURL = 'https://pudding48.github.io/TXvisual/stations.json';
+let timeRequest = 'https://pudding48.github.io/TXvisual/timetable_weekday_up.json';
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -9,8 +10,6 @@ var timeTables;
 
 request.onload = function(){
     stations = request.response;
-    // console.log(stations.stations);
-    trainAnimation();
 
     var stationList = document.querySelectorAll("#TX_stations .cls-2");
     stationList = Array.from(stationList);
@@ -19,43 +18,60 @@ request.onload = function(){
         el.addEventListener('click', function(el){
             getStation(el.target);
         });
-        // console.log("hi");
     })
+    if(request.readyState === XMLHttpRequest.DONE && request.status === 200){
+        request.open('GET', timeRequest);
+        request.send();
+        request.onload = function(){
+            timeTables = request.response;
+            getTable();
+        }
+    }
 };
 
-var slider = document.getElementById("test_slider");
-slider.oninput = trainAnimation;
-var sliderVal = 90;
-var positive = true;
+
+// var slider = document.getElementById("test_slider");
+// slider.oninput = setRatio;
+var currTime = 0;
+var maxTime = 100;
+// var positive = true;
 var moveTrain;
 
-function trainAnimation(){
+function getTable(){
+    let trainTable = timeTables.trains[0];
+    let origin = trainTable.origin;
+    let destination = trainTable.destination;
+    let train = document.getElementsByClassName("train");
+    var origin_point = getStation(origin);
+    console.log(origin_point);
+    setPosition(train[0], origin_point.position);
+}
+
+function setRatio(){
     var line = document.getElementById("TX_line");
     var train = document.getElementsByClassName("train");
     var total_length = line.getTotalLength();
 
     moveTrain = setInterval(function(){
-        if(positive == true){
-            sliderVal += 1;
-        } else {
-            sliderVal -= 1;
+        currTime += 1;
+        // console.log(currTime);
+        if(currTime > maxTime){
+            currTime = 0;
         }
-        if(sliderVal >= 100 || sliderVal <= 0){
-            positive = !positive;
-            // console.log(positive);
-        }
-        let ratio = sliderVal / 100;
-        let p = line.getPointAtLength(ratio * total_length);
-    
-        let bboxrec = train[0].getBBox();
-        p.x -= bboxrec.width/2;
-        p.y -= bboxrec.height/2;
-        // console.log(bboxrec);
+        let ratio = currTime / 100;
         var logging = document.getElementById("logging");
         logging.innerHTML = ratio;
-     
-        train[0].setAttribute("transform", "translate("+p.x+","+p.y+")");
+        let p = line.getPointAtLength(ratio * total_length);
+        setPosition(train[0], p);
     }, 50);
+}
+
+function setPosition(target, position){ //puts target on position
+    // console.log(position);
+    let bboxrec = target.getBBox();
+    position.x -= bboxrec.width/2;
+    position.y -= bboxrec.height/2;
+    target.setAttribute("transform", "translate("+position.x+","+position.y+")");
 }
 
 function toggle(){
@@ -65,8 +81,8 @@ function toggle(){
 function getStation(el){
     const result = stations.stations.filter(
         function(station){
-            return station.id == el.id;
+            return station.id == el;
         }
     );
-    document.getElementById("show").innerHTML = result[0].nameJp;
+    return result[0];
 }

@@ -2,101 +2,121 @@
     "stations": [
         {
             "id": "TX01",
+            "position": 100,
             "nameEn": "Akihabara",
             "nameJp": "秋葉原"
         },
         {
             "id": "TX02",
+            "position": 97.5,
             "nameEn": "Shinokachimachi",
             "nameJp": "新御徒町"
         },
         {
             "id": "TX03",
+            "position": 94.75,
             "nameEn": "Asakusa",
             "nameJp": "浅草"
         },
         {
             "id": "TX04",
+            "position": 90.5,
             "nameEn": "Minamisenzyu",
             "nameJp": "南千住"
         },
         {
             "id": "TX05",
+            "position": 87,
             "nameEn": "Kitasenzyu",
             "nameJp": "北千住"
         },
         {
             "id": "TX06",
+            "position": 82,
             "nameEn": "Aoi",
             "nameJp": "青井"
         },
         {
             "id": "TX07",
+            "position": 79.5,
             "nameEn": "Rokucho",
             "nameJp": "六町"
         },
         {
             "id": "TX08",
+            "position": 73,
             "nameEn": "Yashio",
             "nameJp": "八潮"
         },
         {
             "id": "TX09",
+            "position": 67,
             "nameEn": "Misatochou",
             "nameJp": "三郷中央"
         },
         {
             "id": "TX10",
+            "position": 62,
             "nameEn": "Minaminagareyama",
             "nameJp": "南流山"
         },
         {
             "id": "TX11",
+            "position": 58.5,
             "nameEn": "Nagareyamacenteralpark",
             "nameJp": "流山セントラルパーク"
         },
         {
             "id": "TX12",
+            "position": 54.5,
             "nameEn": "Nagareyamaotakanomori",
             "nameJp": "流山おおたかの森"
         },
         {
             "id": "TX13",
+            "position": 48.5,
             "nameEn": "Kashiwanohacampus",
             "nameJp": "柏の葉キャンパス"
         },
         {
             "id": "TX14",
+            "position": 45,
             "nameEn": "Kashiwatanaka",
             "nameJp": "柏たなか"
         },
         {
             "id": "TX15",
+            "position": 35,
             "nameEn": "Moriya",
             "nameJp": "守谷"
         },
         {
             "id": "TX16",
+            "position": 24,
             "nameEn": "Miraidaira",
             "nameJp": "みらい平"
         },
         {
             "id": "TX17",
+            "position": 16.5,
             "nameEn": "Midorino",
             "nameJp": "みどりの"
         },
         {
             "id": "TX18",
+            "position": 11,
             "nameEn": "Banpakukinenkouen",
             "nameJp": "万博記念公園"
         },
         {
             "id": "TX19",
+            "position": 4.5,
             "nameEn": "Kenkyugakuen",
             "nameJp": "研究学園"
         },
         {
             "id": "TX20",
+            "position": 0,
             "nameEn": "Tsukuba",
             "nameJp": "つくば"
         }
