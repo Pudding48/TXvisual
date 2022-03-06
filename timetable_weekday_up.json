@@ -1,0 +1,37 @@
+{
+    "trains": [
+        {
+            "id": 0,
+            "type": "普通",
+            "origin": "TX20",
+            "destination": "TX15",
+            "table":[
+                {
+                    "id": "TX19",
+                    "arrival": 10,
+                    "departure": 13
+                },
+                {
+                    "id": "TX18",
+                    "arrival": 20,
+                    "departure": 23
+                },                
+                {
+                    "id": "TX17",
+                    "arrival": 30,
+                    "departure": 33
+                },                
+                {
+                    "id": "TX16",
+                    "arrival": 40,
+                    "departure": 43
+                },
+                {
+                    "id": "TX15",
+                    "arrival": 50,
+                    "departure": "none"
+                }
+            ]
+        }
+    ]
+}
