@@ -7,6 +7,11 @@
             "destination": "TX15",
             "table":[
                 {
+                    "id": "TX20",
+                    "arrival": "none",
+                    "departure": 0
+                },
+                {
                     "id": "TX19",
                     "arrival": 10,
                     "departure": 13
