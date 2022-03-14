@@ -37,6 +37,24 @@
                     "departure": "none"
                 }
             ]
+        },
+        {
+            "id": 1,
+            "type": "普通",
+            "origin": "TX15",
+            "destination": "TX01",
+            "table":[
+                {
+                    "id": "TX15",
+                    "arrival": "none",
+                    "departure": 25
+                },
+                {
+                    "id": "TX01",
+                    "arrival": 95,
+                    "departure": "none"
+                }
+            ] 
         }
     ]
 }
